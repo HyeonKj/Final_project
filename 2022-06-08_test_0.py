@@ -1,13 +1,11 @@
 
-import streamlit as st
-
-## Title
-st.title('Streamlit Tutorial')
-## Header/Subheader
-st.header("This is header")
-st.subheader("This is subheader")
-## Text
-st.text("Hello Streamlit! 이 글은 튜토리얼 입니다.")
+# ## Title
+# st.title('Streamlit Tutorial')
+# ## Header/Subheader
+# st.header("This is header")
+# st.subheader("This is subheader")
+# ## Text
+# st.text("Hello Streamlit! 이 글은 튜토리얼 입니다.")
 
 import streamlit as st
 import streamlit.components.v1 as components
@@ -35,22 +33,20 @@ elif cate == '날씨':
     print(source_code)
     components.html(source_code, width = 1100 , height = 650)
     
-     ## Markdown syntax
-    st.markdown("# This is a Markdown title")
-    st.markdown("## This is a Markdown header")
-    st.markdown("### This is a Markdown subheader")
-    st.markdown("- item 1\n"
-                "   - item 1.1\n"
-                "   - item 1.2\n"
-                "- item 2\n"
-                "- item 3")
-    st.markdown("1. item 1\n"
-                "   1. item 1.1\n"
-                "   2. item 1.2\n"
-                "2. item 2\n"
-                "3. item 3")
-
-
+    #  ## Markdown syntax
+    # st.markdown("# This is a Markdown title")
+    # st.markdown("## This is a Markdown header")
+    # st.markdown("### This is a Markdown subheader")
+    # st.markdown("- item 1\n"
+    #             "   - item 1.1\n"
+    #             "   - item 1.2\n"
+    #             "- item 2\n"
+    #             "- item 3")
+    # st.markdown("1. item 1\n"
+    #             "   1. item 1.1\n"
+    #             "   2. item 1.2\n"
+    #             "2. item 2\n"
+    #             "3. item 3")
 
 ## Load data
 # from sklearn.datasets import load_iris
