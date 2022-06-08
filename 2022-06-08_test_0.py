@@ -18,7 +18,8 @@ import streamlit.components.v1 as components
 st.sidebar.header("사이드바 메뉴")
 cate = st.sidebar.selectbox("메뉴를 선택하세요.", ["물가", "날씨"])
 if cate == '물가':
-    st.header("test html import")
+
+    st.header("지도에서 원하시는 국가를 선택하세요 ")
     
     HtmlFile = open("ttestt_world_price_info_0608.html", 'r', encoding='utf-8')
     source_code = HtmlFile.read() 
@@ -26,7 +27,8 @@ if cate == '물가':
     components.html(source_code, width = 850 , height = 650)
     
 elif cate == '날씨':
-    st.header("test html import")
+
+    st.header("선택한 국가의 주간 일기예보")
     
     HtmlFile = open("./weekly_weather/가나 주간 일기예보.html", 'r', encoding='utf-8')
     source_code = HtmlFile.read() 
