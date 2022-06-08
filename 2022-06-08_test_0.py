@@ -50,32 +50,25 @@ elif cate == '날씨':
     #             "2. item 2\n"
     #             "3. item 3")
 
-## Load data
-# from sklearn.datasets import load_iris
-# iris = load_iris()
-# iris_df = pd.DataFrame(iris.data, columns=iris.feature_names)
-# iris_df['target'] = iris['target']
-# iris_df['target'] = iris_df['target'].apply(lambda x: 'setosa' if x == 0 else ('versicolor' if x == 1 else 'virginica'))
-
-# ## Return table/dataframe
-# # table
-# st.table(iris_df.head())
-
-# # dataframe
-# st.dataframe(iris_df)
-# st.write(iris_df)
 
 
-## Select Box
-# occupation = st.selectbox("직군을 선택하세요.",
-#                           ["Backend Developer",
-#                            "Frontend Developer",
-#                            "ML Engineer",
-#                            "Data Engineer",
-#                            "Database Administrator",
-#                            "Data Scientist",
-#                            "Data Analyst",
-#                            "Security Engineer"])
-# st.write("당신의 직군은 ", occupation, " 입니다.")
+# Select Box
+occupation = st.selectbox("직군을 선택하세요.",
+                          ["그리스",
+                           "호주",
+                           "괌",
+                           "홍콩",])
+
+if occupation == '괌':
+
+    st.write("선택한 도시 명 : ", occupation, "의 월 평균 기온에 대해 안내드립니다.")
+    
+    HtmlFile = open("./monthly_weather/괌 괌_월평균기온.html", 'r', encoding='utf-8')
+    source_code = HtmlFile.read() 
+    print(source_code)
+    components.html(source_code, width = 900 , height = 650)
+
+else:
+    st.write("선택한 도시 명 : ", occupation, "의 월 평균 기온은 아직 업데이트 중입니다. 빠른 시일 업데이트하도록 하겠습니다.")
 
 
