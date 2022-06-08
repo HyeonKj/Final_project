@@ -1,11 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Jun  8 09:56:45 2022
 
-@author: user
-"""
-
-import pandas as pd
 import streamlit as st
 
 ## Title
@@ -29,10 +22,10 @@ cate = st.sidebar.selectbox("메뉴를 선택하세요.", ["물가", "날씨"])
 if cate == '물가':
     st.header("test html import")
     
-    HtmlFile = open("world_price_info_0603.html", 'r', encoding='utf-8')
+    HtmlFile = open("ttestt_world_price_info_0608.html", 'r', encoding='utf-8')
     source_code = HtmlFile.read() 
     print(source_code)
-    components.html(source_code, width = 1100 , height = 650)
+    components.html(source_code, width = 850 , height = 650)
     
 elif cate == '날씨':
     st.header("test html import")
