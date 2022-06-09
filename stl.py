@@ -129,3 +129,19 @@ if weather_button:
             source_code = HtmlFile.read() 
             print(source_code)
             components.html(source_code, width = 800 , height = 600)
+
+
+
+
+
+    
+# if st.button('환율 페이지'):
+#     chapter = '환율'
+
+    #     end_date = st.date_input(
+    #     end_date = st.date_input(
+    #         '떠나고 싶은 기간을 설정해주세요!',
+    #         datetime.now().strftime('%Y-%m-%d')
+    #     )
+    #     return start_date, end_date
+    # date()
