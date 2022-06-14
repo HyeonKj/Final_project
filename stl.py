@@ -14,17 +14,6 @@ def call_data():
     return a
 
 @st.experimental_singleton
-def map():
-    m = folium.Map(location=[39.949610, -75.150282], zoom_start=16)
-
-    # add marker for Liberty Bell
-    tooltip = "Liberty Bell"
-    folium.Marker(
-        [39.949610, -75.150282], popup="Liberty Bell", tooltip=tooltip
-    ).add_to(m)
-
-    # call to render Folium map in Streamlit
-    return m
 
 mongo_name = ['Australia', 'Bahrain', 'Brazil', 'Brunei', 'Cambodia','Canada', 'Hong Kong',
                 'China', 'Czech', 'Denmark', 'Euro', 'Fiji', 'Hungary', 'India', 'Indonesia', 'Israel',
